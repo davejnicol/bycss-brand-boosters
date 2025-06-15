@@ -1,0 +1,428 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<link rel="icon" type="image/svg+xml" href="../favicon.svg" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Style Guide</title>
+		<link rel="stylesheet" href="style-guide.css" />
+		<link rel="stylesheet" href="/sass/main.scss" />
+		<script type="module" src="sg-main.js"></script>
+	</head>
+	<body>
+		<div class="sg-body">
+			<div class="sg-nav" data-collapse="medium">
+				<div class="sg-nav-container djne-padding-5">
+					<a href="#" class="sg-brand djne-fs-600 djne-fw-bold djne-uppercase">Brand Logo</a>
+					<input type="checkbox" id="sg-show-menu" />
+					<label for="sg-show-menu" class="sg-hamburger"><span class="sg-hamburger-line"></span></label>
+					<div class="sg-menu-wrapper">
+						<div class="sg-menu-cat">
+							<h3 class="sg-nav-header djne-margin-block-start-9 djne-uppercase">Fundamentals</h3>
+							<nav role="navigation" class="sg-menu">
+								<a href="#Logo" class="sg-menu-link">Logo</a>
+								<a href="#Typography" class="sg-menu-link">Typography</a>
+								<a href="#Rich-Text" class="sg-menu-link">Rich Text</a>
+								<a href="#Colours" class="sg-menu-link">Colors</a>
+								<a href="#Buttons" class="sg-menu-link">Buttons</a>
+								<a href="#Columns" class="sg-menu-link">Columns</a>
+								<a href="#Grids" class="sg-menu-link">Grids</a>
+								<a href="#Spacers" class="sg-menu-link">Spacers</a>
+								<a href="#Text-Boxes" class="sg-menu-link">Text Boxes</a>
+								<a href="#Icons" class="sg-menu-link">Icons</a>
+								<a href="#Forms" class="sg-menu-link">Forms</a>
+								<a href="#Tabs" class="sg-menu-link">Tabs</a>
+								<a href="#Box-Shadows" class="sg-menu-link">BoxShadows</a>
+							</nav>
+						</div>
+						<div class="sg-menu-cat">
+							<h3 class="sg-nav-header djne-margin-block-start-6 djne-uppercase">Components</h3>
+							<nav role="navigation" class="sg-menu" style="transform: translateY(0px) translateX(0px)">
+								<a href="#Navigation" class="sg-menu-link">Navigation</a>
+								<a href="#Header" class="sg-menu-link">Header</a>
+								<a href="#Sections" class="sg-menu-link">Sections</a>
+								<a href="#Feature" class="sg-menu-link">Feature</a>
+								<a href="#Cards" class="sg-menu-link">Cards</a>
+								<a href="#Footer" class="sg-menu-link">Footer</a>
+							</nav>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="sg-fixed-theme-toggle">
+				<button id="sg-theme-toggle" class="djne-box-shadow-2" aria-label="Switch to dark theme">
+					<svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 180 180">
+						<g id="sg-toogle-sun">
+							<path
+								d="M153.64,116.36l26.36-26.36-26.36-26.36V26.36h-37.28L90,0l-26.36,26.36H26.36v37.28L0,90l26.36,26.36v37.28h37.28l26.36,26.36,26.36-26.36h37.28v-37.28ZM90,140c-27.61,0-50-22.39-50-50s22.39-50,50-50,50,22.39,50,50-22.39,50-50,50Z"
+							/>
+						</g>
+						<g id="sg-toggle-circle"><path d="M127.5,90c0,20.71-16.79,37.5-37.5,37.5s-37.5-16.79-37.5-37.5,16.79-37.5,37.5-37.5,37.5,16.79,37.5,37.5Z" /></g>
+					</svg>
+				</button>
+			</div>
+			<div class="sg-content">
+				<div class="sg-section sg-section-hero">
+					<div>
+						<h1>Style Guide</h1>
+						<p>This style guide page contains styles and components that are to be used throughout a website.</p>
+					</div>
+				</div>
+				<h2 class="sg-section sg-section-header djne-uppercase">Fundamentals</h2>
+				<section class="sg-section sg-section-divider" id="Logo">
+					<h2 class="djne-clr-neutral-700 djne-fs-600 djne-fw-bold djne-margin-block-end-2">Logo</h2>
+					<p class="djne-clr-neutral-400 djne-margin-block-end-5">The different representations of the brands logo.</p>
+					<div class="djne-even-columns djne-margin-block-end-2" style="align-items: center">
+						<div class="sg-brand djne-fs-600 djne-fw-bold djne-uppercase">Brand Logo</div>
+						<div class="sg-brand djne-fs-600 djne-fw-bold djne-uppercase djne-clr-neutral-500">Brand Logo</div>
+					</div>
+				</section>
+				<section class="sg-section sg-section-divider" id="Typography">
+					<h2 class="djne-clr-neutral-700 djne-fs-600 djne-fw-bold djne-margin-block-end-2">Typography</h2>
+					<p class="djne-clr-neutral-400 djne-margin-block-end-4">The different font families and text sizes used throughout the site.</p>
+					<div class="djne-even-columns djne-margin-block-10" style="align-items: center">
+						<div>
+							<p class="djne-fs-400 djne-clr-neutral-400 djne-fw-bold sg-white-space">
+								H1
+								<span class="djne-bg-accent-100 djne-clr-accent-700 djne-border-radius-1 djne-margin-inline-1 djne-padding-block-1 djne-padding-inline-2">-ff-base</span>
+								<span class="djne-bg-accent-100 djne-clr-accent-700 djne-border-radius-1 djne-margin-inline-1 djne-padding-block-1 djne-padding-inline-2">-fs-900</span>
+								<span class="djne-bg-accent-100 djne-clr-accent-700 djne-border-radius-1 djne-margin-inline-1 djne-padding-block-1 djne-padding-inline-2">-fw-bold</span>
+							</p>
+							<div class="djne-ff-base djne-fs-900 djne-fw-bold djne-margin-block-end-6">Base Header</div>
+							<p class="djne-fs-400 djne-clr-neutral-400 djne-fw-bold sg-white-space">
+								H2
+								<span class="djne-bg-accent-100 djne-clr-accent-700 djne-border-radius-1 djne-margin-inline-1 djne-padding-block-1 djne-padding-inline-2">-ff-base</span>
+								<span class="djne-bg-accent-100 djne-clr-accent-700 djne-border-radius-1 djne-margin-inline-1 djne-padding-block-1 djne-padding-inline-2">-fs-800</span>
+								<span class="djne-bg-accent-100 djne-clr-accent-700 djne-border-radius-1 djne-margin-inline-1 djne-padding-block-1 djne-padding-inline-2">-fw-bold</span>
+							</p>
+							<div class="djne-ff-base djne-fs-800 djne-fw-bold djne-margin-block-end-6">Base Header</div>
+							<p class="djne-fs-400 djne-clr-neutral-400 djne-fw-bold sg-white-space">
+								H3
+								<span class="djne-bg-accent-100 djne-clr-accent-700 djne-border-radius-1 djne-margin-inline-1 djne-padding-block-1 djne-padding-inline-2">-ff-base</span>
+								<span class="djne-bg-accent-100 djne-clr-accent-700 djne-border-radius-1 djne-margin-inline-1 djne-padding-block-1 djne-padding-inline-2">-fs-700</span>
+								<span class="djne-bg-accent-100 djne-clr-accent-700 djne-border-radius-1 djne-margin-inline-1 djne-padding-block-1 djne-padding-inline-2">-fw-bold</span>
+							</p>
+							<div class="djne-ff-base djne-fs-700 djne-fw-bold djne-margin-block-end-6">Base Header</div>
+							<p class="djne-fs-400 djne-clr-neutral-400 djne-fw-bold sg-white-space">
+								H4
+								<span class="djne-bg-accent-100 djne-clr-accent-700 djne-border-radius-1 djne-margin-inline-1 djne-padding-block-1 djne-padding-inline-2">-ff-base</span>
+								<span class="djne-bg-accent-100 djne-clr-accent-700 djne-border-radius-1 djne-margin-inline-1 djne-padding-block-1 djne-padding-inline-2">-fs-600</span>
+								<span class="djne-bg-accent-100 djne-clr-accent-700 djne-border-radius-1 djne-margin-inline-1 djne-padding-block-1 djne-padding-inline-2">-fw-bold</span>
+							</p>
+							<div class="djne-ff-base djne-fs-600 djne-fw-bold djne-margin-block-end-6">Base Header</div>
+							<p class="djne-fs-400 djne-clr-neutral-400 djne-fw-bold sg-white-space">
+								H5
+								<span class="djne-bg-accent-100 djne-clr-accent-700 djne-border-radius-1 djne-margin-inline-1 djne-padding-block-1 djne-padding-inline-2">-ff-base</span>
+								<span class="djne-bg-accent-100 djne-clr-accent-700 djne-border-radius-1 djne-margin-inline-1 djne-padding-block-1 djne-padding-inline-2">-fs-500</span>
+								<span class="djne-bg-accent-100 djne-clr-accent-700 djne-border-radius-1 djne-margin-inline-1 djne-padding-block-1 djne-padding-inline-2">-fw-bold</span>
+							</p>
+							<div class="djne-ff-base djne-fs-500 djne-fw-bold djne-margin-block-end-6">Base Header</div>
+							<p class="djne-fs-400 djne-clr-neutral-400 djne-fw-bold sg-white-space">
+								H6
+								<span class="djne-bg-accent-100 djne-clr-accent-700 djne-border-radius-1 djne-margin-inline-1 djne-padding-block-1 djne-padding-inline-2">-ff-base</span>
+								<span class="djne-bg-accent-100 djne-clr-accent-700 djne-border-radius-1 djne-margin-inline-1 djne-padding-block-1 djne-padding-inline-2">-fs-400</span>
+								<span class="djne-bg-accent-100 djne-clr-accent-700 djne-border-radius-1 djne-margin-inline-1 djne-padding-block-1 djne-padding-inline-2">-fw-bold</span>
+							</p>
+							<div class="djne-ff-base djne-fs-400 djne-fw-bold djne-margin-block-end-6">Base Header</div>
+						</div>
+						<div>
+							<p class="djne-fs-400 djne-clr-neutral-400 djne-fw-bold sg-white-space">
+								H1
+								<span class="djne-bg-accent-100 djne-clr-accent-700 djne-border-radius-1 djne-margin-inline-1 djne-padding-block-1 djne-padding-inline-2">-ff-accent</span>
+								<span class="djne-bg-accent-100 djne-clr-accent-700 djne-border-radius-1 djne-margin-inline-1 djne-padding-block-1 djne-padding-inline-2">-fs-900</span>
+								<span class="djne-bg-accent-100 djne-clr-accent-700 djne-border-radius-1 djne-margin-inline-1 djne-padding-block-1 djne-padding-inline-2">-fw-bold</span>
+							</p>
+							<div class="djne-ff-accent djne-fs-900 djne-fw-bold djne-margin-block-end-6">Accent Header</div>
+							<p class="djne-fs-400 djne-clr-neutral-400 djne-fw-bold sg-white-space">
+								H2
+								<span class="djne-bg-accent-100 djne-clr-accent-700 djne-border-radius-1 djne-margin-inline-1 djne-padding-block-1 djne-padding-inline-2">-ff-accent</span>
+								<span class="djne-bg-accent-100 djne-clr-accent-700 djne-border-radius-1 djne-margin-inline-1 djne-padding-block-1 djne-padding-inline-2">-fs-800</span>
+								<span class="djne-bg-accent-100 djne-clr-accent-700 djne-border-radius-1 djne-margin-inline-1 djne-padding-block-1 djne-padding-inline-2">-fw-bold</span>
+							</p>
+							<div class="djne-ff-accent djne-fs-800 djne-fw-bold djne-margin-block-end-6">Accent Header</div>
+							<p class="djne-fs-400 djne-clr-neutral-400 djne-fw-bold sg-white-space">
+								H3
+								<span class="djne-bg-accent-100 djne-clr-accent-700 djne-border-radius-1 djne-margin-inline-1 djne-padding-block-1 djne-padding-inline-2">-ff-accent</span>
+								<span class="djne-bg-accent-100 djne-clr-accent-700 djne-border-radius-1 djne-margin-inline-1 djne-padding-block-1 djne-padding-inline-2">-fs-700</span>
+								<span class="djne-bg-accent-100 djne-clr-accent-700 djne-border-radius-1 djne-margin-inline-1 djne-padding-block-1 djne-padding-inline-2">-fw-bold</span>
+							</p>
+							<div class="djne-ff-accent djne-fs-700 djne-fw-bold djne-margin-block-end-6">Accent Header</div>
+							<p class="djne-fs-400 djne-clr-neutral-400 djne-fw-bold sg-white-space">
+								H4
+								<span class="djne-bg-accent-100 djne-clr-accent-700 djne-border-radius-1 djne-margin-inline-1 djne-padding-block-1 djne-padding-inline-2">-ff-accent</span>
+								<span class="djne-bg-accent-100 djne-clr-accent-700 djne-border-radius-1 djne-margin-inline-1 djne-padding-block-1 djne-padding-inline-2">-fs-600</span>
+								<span class="djne-bg-accent-100 djne-clr-accent-700 djne-border-radius-1 djne-margin-inline-1 djne-padding-block-1 djne-padding-inline-2">-fw-bold</span>
+							</p>
+							<div class="djne-ff-accent djne-fs-600 djne-fw-bold djne-margin-block-end-6">Accent Header</div>
+							<p class="djne-fs-400 djne-clr-neutral-400 djne-fw-bold sg-white-space">
+								H5
+								<span class="djne-bg-accent-100 djne-clr-accent-700 djne-border-radius-1 djne-margin-inline-1 djne-padding-block-1 djne-padding-inline-2">-ff-accent</span>
+								<span class="djne-bg-accent-100 djne-clr-accent-700 djne-border-radius-1 djne-margin-inline-1 djne-padding-block-1 djne-padding-inline-2">-fs-500</span>
+								<span class="djne-bg-accent-100 djne-clr-accent-700 djne-border-radius-1 djne-margin-inline-1 djne-padding-block-1 djne-padding-inline-2">-fw-bold</span>
+							</p>
+							<div class="djne-ff-accent djne-fs-500 djne-fw-bold djne-margin-block-end-6">Accent Header</div>
+							<p class="djne-fs-400 djne-clr-neutral-400 djne-fw-bold sg-white-space">
+								H6
+								<span class="djne-bg-accent-100 djne-clr-accent-700 djne-border-radius-1 djne-margin-inline-1 djne-padding-block-1 djne-padding-inline-2">-ff-accent</span>
+								<span class="djne-bg-accent-100 djne-clr-accent-700 djne-border-radius-1 djne-margin-inline-1 djne-padding-block-1 djne-padding-inline-2">-fs-400</span>
+								<span class="djne-bg-accent-100 djne-clr-accent-700 djne-border-radius-1 djne-margin-inline-1 djne-padding-block-1 djne-padding-inline-2">-fw-bold</span>
+							</p>
+							<div class="djne-ff-accent djne-fs-400 djne-fw-bold djne-margin-block-end-6">Accent Header</div>
+						</div>
+					</div>
+					<p class="djne-fs-400 djne-clr-neutral-400 djne-fw-bold djne-margin-block-end-2 sg-white-space">
+						LARGE PARAGRAPH
+						<span class="djne-bg-accent-100 djne-clr-accent-700 djne-border-radius-1 djne-margin-inline-1 djne-padding-block-1 djne-padding-inline-2">-ff-base</span>
+						<span class="djne-bg-accent-100 djne-clr-accent-700 djne-border-radius-1 djne-margin-inline-1 djne-padding-block-1 djne-padding-inline-2">-fs-600</span>
+					</p>
+					<p class="djne-ff-base djne-fs-600 djne-margin-block-end-8">
+						Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+						consequat.
+					</p>
+					<p class="djne-fs-400 djne-clr-neutral-400 djne-fw-bold djne-margin-block-end-2 sg-white-space">
+						PARAGRAPH
+						<span class="djne-bg-accent-100 djne-clr-accent-700 djne-border-radius-1 djne-margin-inline-1 djne-padding-block-1 djne-padding-inline-2">-ff-base</span>
+						<span class="djne-bg-accent-100 djne-clr-accent-700 djne-border-radius-1 djne-margin-inline-1 djne-padding-block-1 djne-padding-inline-2">-fs-500</span>
+					</p>
+					<p class="djne-ff-base djne-fs-500 djne-margin-block-end-8 djne-margin-block-end-2">
+						Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+						consequat.
+					</p>
+					<p class="djne-fs-400 djne-clr-neutral-400 djne-fw-bold djne-margin-block-end-2 sg-white-space">
+						SMALL PARAGRAPH
+						<span class="djne-bg-accent-100 djne-clr-accent-700 djne-border-radius-1 djne-margin-inline-1 djne-padding-block-1 djne-padding-inline-2">-ff-base</span>
+						<span class="djne-bg-accent-100 djne-clr-accent-700 djne-border-radius-1 djne-margin-inline-1 djne-padding-block-1 djne-padding-inline-2">-fs-400</span>
+					</p>
+					<p class="djne-ff-base djne-fs-400 djne-margin-block-end-10">
+						Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+						consequat.
+					</p>
+					<p class="djne-fs-400 djne-clr-neutral-400 djne-fw-bold djne-margin-block-end-2 sg-white-space">
+						LARGE PARAGRAPH
+						<span class="djne-bg-accent-100 djne-clr-accent-700 djne-border-radius-1 djne-margin-inline-1 djne-padding-block-1 djne-padding-inline-2">-ff-accent</span>
+						<span class="djne-bg-accent-100 djne-clr-accent-700 djne-border-radius-1 djne-margin-inline-1 djne-padding-block-1 djne-padding-inline-2">-fs-600</span>
+					</p>
+					<p class="djne-ff-accent djne-fs-600 djne-margin-block-end-8">
+						Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+						consequat.
+					</p>
+					<p class="djne-fs-400 djne-clr-neutral-400 djne-fw-bold djne-margin-block-end-2 sg-white-space">
+						PARAGRAPH
+						<span class="djne-bg-accent-100 djne-clr-accent-700 djne-border-radius-1 djne-margin-inline-1 djne-padding-block-1 djne-padding-inline-2">-ff-accent</span>
+						<span class="djne-bg-accent-100 djne-clr-accent-700 djne-border-radius-1 djne-margin-inline-1 djne-padding-block-1 djne-padding-inline-2">-fs-500</span>
+					</p>
+					<p class="djne-ff-accent djne-fs-500 djne-margin-block-end-8">
+						Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+						consequat.
+					</p>
+					<p class="djne-fs-400 djne-clr-neutral-400 djne-fw-bold djne-margin-block-end-2 sg-white-space">
+						SMALL PARAGRAPH
+						<span class="djne-bg-accent-100 djne-clr-accent-700 djne-border-radius-1 djne-margin-inline-1 djne-padding-block-1 djne-padding-inline-2">-ff-accent</span>
+						<span class="djne-bg-accent-100 djne-clr-accent-700 djne-border-radius-1 djne-margin-inline-1 djne-padding-block-1 djne-padding-inline-2">-fs-400</span>
+					</p>
+					<p class="djne-ff-accent djne-fs-400 djne-margin-block-end-10">
+						Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+						consequat.
+					</p>
+					<p class="djne-fs-400 djne-clr-neutral-400 djne-fw-bold djne-margin-block-end-2 sg-white-space">
+						QUOTE
+						<span class="djne-bg-accent-100 djne-clr-accent-700 djne-border-radius-1 djne-margin-inline-1 djne-padding-block-1 djne-padding-inline-2">-ff-base</span>
+						<span class="djne-bg-accent-100 djne-clr-accent-700 djne-border-radius-1 djne-margin-inline-1 djne-padding-block-1 djne-padding-inline-2">-fs-600</span>
+						<span class="djne-bg-accent-700 djne-clr-accent-100 djne-border-radius-1 djne-margin-inline-1 djne-padding-block-1 djne-padding-inline-2">-NO-STYLE-YET</span>
+					</p>
+					<blockquote class="djne-ff-base djne-fs-600 djne-margin-block-end-10">
+						Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+						consequat.
+					</blockquote>
+					<p class="djne-fs-400 djne-clr-neutral-400 djne-fw-bold djne-margin-block-end-2 sg-white-space">
+						LIST
+						<span class="djne-bg-accent-100 djne-clr-accent-700 djne-border-radius-1 djne-margin-inline-1 djne-padding-block-1 djne-padding-inline-2">-ff-base</span>
+						<span class="djne-bg-accent-100 djne-clr-accent-700 djne-border-radius-1 djne-margin-inline-1 djne-padding-block-1 djne-padding-inline-2">-fs-600</span>
+						<span class="djne-bg-accent-100 djne-clr-accent-700 djne-border-radius-1 djne-margin-inline-1 djne-padding-block-1 djne-padding-inline-2">-margin-inline-start-8</span>
+						<span class="djne-bg-accent-700 djne-clr-accent-100 djne-border-radius-1 djne-margin-inline-1 djne-padding-block-1 djne-padding-inline-2">-NO-STYLE-YET</span>
+					</p>
+					<ul class="djne-ff-base djne-fs-500 djne-margin-inline-start-8 djne-margin-block-end-8">
+						<li>Lorem ipsum dolor sit amet.</li>
+						<li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora, omnis.</li>
+						<li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci iure facere nisi nobis qui itaque sunt eius explicabo autem saepe quis suscipit, ad vel distinctio nesciunt ex! Voluptatem, nobis. Modi!</li>
+					</ul>
+					<ol class="djne-ff-base djne-fs-500 djne-margin-inline-start-8 djne-margin-block-end-10">
+						<li>Lorem ipsum dolor sit amet.</li>
+						<li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora, omnis.</li>
+						<li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci iure facere nisi nobis qui itaque sunt eius explicabo autem saepe quis suscipit, ad vel distinctio nesciunt ex! Voluptatem, nobis. Modi!</li>
+					</ol>
+					<p class="djne-fs-400 djne-clr-neutral-400 djne-fw-bold djne-margin-block-end-2 sg-white-space">
+						LINK
+						<span class="djne-bg-accent-100 djne-clr-accent-700 djne-border-radius-1 djne-margin-inline-1 djne-padding-block-1 djne-padding-inline-2">-ff-base</span>
+						<span class="djne-bg-accent-100 djne-clr-accent-700 djne-border-radius-1 djne-margin-inline-1 djne-padding-block-1 djne-padding-inline-2">-fs-400</span>
+						<span class="djne-bg-accent-100 djne-clr-accent-700 djne-border-radius-1 djne-margin-inline-1 djne-padding-block-1 djne-padding-inline-2">-accent-400</span>
+					</p>
+					<div class="djne-margin-block-end-10">
+						<a href="#" class="djne-ff-base djne-fs-400"> This is a standard link. </a>
+					</div>
+					<p class="djne-fs-400 djne-clr-neutral-400 djne-fw-bold djne-margin-block-end-2 sg-white-space">
+						LINK
+						<span class="djne-bg-accent-100 djne-clr-accent-700 djne-border-radius-1 djne-margin-inline-1 djne-padding-block-1 djne-padding-inline-2">-ff-accent</span>
+						<span class="djne-bg-accent-100 djne-clr-accent-700 djne-border-radius-1 djne-margin-inline-1 djne-padding-block-1 djne-padding-inline-2">-fs-400</span>
+						<span class="djne-bg-accent-100 djne-clr-accent-700 djne-border-radius-1 djne-margin-inline-1 djne-padding-block-1 djne-padding-inline-2">-accent-400</span>
+					</p>
+					<div class="djne-margin-block-end-10">
+						<a href="#" class="djne-ff-accent djne-fs-400"> This is a link with the accent font-family. </a>
+					</div>
+
+					<p class="djne-fs-400 djne-clr-neutral-400 djne-fw-bold djne-margin-block-end-2 sg-white-space">
+						FIGURE WITH CAPTION
+						<span class="djne-bg-accent-100 djne-clr-accent-700 djne-border-radius-1 djne-margin-inline-1 djne-padding-block-1 djne-padding-inline-2">-ff-base</span>
+						<span class="djne-bg-accent-100 djne-clr-accent-700 djne-border-radius-1 djne-margin-inline-1 djne-padding-block-1 djne-padding-inline-2">-fs-400</span>
+						<span class="djne-bg-accent-100 djne-clr-accent-700 djne-border-radius-1 djne-margin-inline-1 djne-padding-block-1 djne-padding-inline-2">-accent-400</span>
+					</p>
+					<div class="djne-margin-block-end-8 djne-text-center">
+						<figure style="max-width: 100%">
+							<div class="djne-bg-primary-500 djne-border-radius-1">
+								<img src="https://dummyimage.com/1920x700/" style="opacity: 0.2" alt="Example Image" />
+							</div>
+							<figcaption>An image with caption</figcaption>
+						</figure>
+					</div>
+				</section>
+				<section class="sg-section sg-section-divider" id="Rich-Text">
+					<h2 class="djne-clr-neutral-700 djne-fs-600 djne-fw-bold djne-margin-block-end-2">Rich Text</h2>
+					<p class="djne-clr-neutral-400 djne-margin-block-end-5">Formatted rich text element used for long sections of text such as blog posts.</p>
+				</section>
+				<section class="sg-section sg-section-divider" id="Colours">
+					<h2 class="djne-clr-neutral-700 djne-fs-600 djne-fw-bold djne-margin-block-end-2">Colors</h2>
+					<p class="djne-clr-neutral-400 djne-margin-block-end-5">The different weights of colours (neutral, accent, & primary) used throughout the website.</p>
+				</section>
+				<section class="sg-section sg-section-divider" id="Buttons">
+					<h2 class="djne-clr-neutral-700 djne-fs-600 djne-fw-bold djne-margin-block-end-2">Buttons</h2>
+					<p class="djne-clr-neutral-400 djne-margin-block-end-5">The different types of buttons used throughout the website.</p>
+					<p class="djne-fs-400 djne-clr-neutral-400 djne-fw-bold djne-margin-block-end-2 sg-white-space">
+						MAIN BUTTON CLASS
+						<span class="djne-bg-accent-100 djne-clr-accent-700 djne-border-radius-1 djne-margin-inline-1 djne-padding-block-1 djne-padding-inline-2">-button</span>
+						data-type ⮞ color scheme ⮞ ie.
+						<span class="djne-bg-accent-100 djne-clr-accent-700 djne-border-radius-1 djne-margin-inline-1 djne-padding-block-1 djne-padding-inline-2">data-type="primary"</span>
+					</p>
+					<div class="djne-grid-auto-fit djne-margin-block-8">
+						<div>
+							<p class="djne-fs-400 djne-clr-neutral-400 djne-fw-bold djne-margin-block-end-2">PRIMARY</p>
+							<a href="#" class="djne-button" data-type="primary">Learn more</a>
+						</div>
+						<div>
+							<p class="djne-fs-400 djne-clr-neutral-400 djne-fw-bold djne-margin-block-end-2">PRIMARY-OUTLINE</p>
+							<a href="#" class="djne-button" data-type="primary-outline">Learn more</a>
+						</div>
+						<div>
+							<p class="djne-fs-400 djne-clr-neutral-400 djne-fw-bold djne-margin-block-end-2">ACCENT</p>
+							<a href="#" class="djne-button" data-type="accent">Learn more</a>
+						</div>
+						<div>
+							<p class="djne-fs-400 djne-clr-neutral-400 djne-fw-bold djne-margin-block-end-2">ACCENT-OUTLINE</p>
+							<a href="#" class="djne-button" data-type="accent-outline">Learn more</a>
+						</div>
+						<div>
+							<p class="djne-fs-400 djne-clr-neutral-400 djne-fw-bold djne-margin-block-end-2">SIMPLE</p>
+							<a href="#" class="djne-button" data-type="simple">Learn more</a>
+						</div>
+						<div>
+							<p class="djne-fs-400 djne-clr-neutral-400 djne-fw-bold djne-margin-block-end-2">SIMPLE-OUTLINE</p>
+							<a href="#" class="djne-button" data-type="simple-outline">Learn more</a>
+						</div>
+					</div>
+				</section>
+				<section class="sg-section sg-section-divider" id="Columns">
+					<h2 class="djne-clr-neutral-700 djne-fs-600 djne-fw-bold djne-margin-block-end-2">Columns</h2>
+					<p class="djne-clr-neutral-400 djne-margin-block-end-5">The column grid system to make it easy to align sections across different screen sizes.</p>
+				</section>
+				<section class="sg-section sg-section-divider" id="Grids">
+					<h2 class="djne-clr-neutral-700 djne-fs-600 djne-fw-bold djne-margin-block-end-2">Grids</h2>
+					<p class="djne-clr-neutral-400 djne-margin-block-end-5">Different grid layouts to use across your site.</p>
+				</section>
+				<section class="sg-section sg-section-divider" id="Spacers">
+					<h2 class="djne-clr-neutral-700 djne-fs-600 djne-fw-bold djne-margin-block-end-2">Spacers</h2>
+					<p class="djne-clr-neutral-400 djne-margin-block-end-5">Spacer elements using the following system to give sections more room to breathe.</p>
+				</section>
+				<section class="sg-section" id="Text-Boxes">
+					<h2 class="djne-clr-neutral-700 djne-fs-600 djne-fw-bold djne-margin-block-end-2">Text Boxes</h2>
+					<p class="djne-clr-neutral-400 djne-margin-block-end-5">Boxes for text elements throughout the website, e.g for a section header.</p>
+				</section>
+				<section class="sg-section sg-section-divider" id="Icons">
+					<h2 class="djne-clr-neutral-700 djne-fs-600 djne-fw-bold djne-margin-block-end-2">Icons</h2>
+					<p class="djne-clr-neutral-400 djne-margin-block-end-5">Icons used across the website taken from this Icon Pack.</p>
+				</section>
+				<section class="sg-section sg-section-divider" id="Forms">
+					<h2 class="djne-clr-neutral-700 djne-fs-600 djne-fw-bold djne-margin-block-end-2">Forms</h2>
+					<p class="djne-clr-neutral-400 djne-margin-block-end-5">Form element styling shown below.</p>
+				</section>
+				<section class="sg-section" id="Tabs">
+					<h2 class="djne-clr-neutral-700 djne-fs-600 djne-fw-bold djne-margin-block-end-2">Tabs</h2>
+					<p class="djne-clr-neutral-400 djne-margin-block-end-5">Tabs styling shown below.</p>
+				</section>
+				<section class="sg-section" id="Box-Shadows">
+					<h2 class="djne-clr-neutral-700 djne-fs-600 djne-fw-bold djne-margin-block-end-2">Box Shadows</h2>
+					<p class="djne-clr-neutral-400 djne-margin-block-end-5">Box shadows styling shown below.</p>
+				</section>
+				<h2 class="sg-section sg-section-header djne-margin-block-start-6 djne-uppercase">Components</h2>
+				<section class="sg-section" id="Navigation">
+					<h2 class="djne-clr-neutral-700 djne-fs-600 djne-fw-bold djne-margin-block-end-2">Navigation</h2>
+				</section>
+				<section class="sg-section sg-section-divider" id="Header">
+					<h2 class="djne-clr-neutral-700 djne-fs-600 djne-fw-bold djne-margin-block-end-2">Header</h2>
+				</section>
+				<section class="sg-section sg-section-divider" id="Sections">
+					<h2 class="djne-clr-neutral-700 djne-fs-600 djne-fw-bold djne-margin-block-end-2">Sections</h2>
+				</section>
+				<section class="sg-section sg-section-divider" id="Feature">
+					<h2 class="djne-clr-neutral-700 djne-fs-600 djne-fw-bold djne-margin-block-end-2">Feature</h2>
+				</section>
+				<section class="sg-section sg-section-divider" id="Cards">
+					<h2 class="djne-clr-neutral-700 djne-fs-600 djne-fw-bold djne-margin-block-end-2">Cards</h2>
+					<p class="djne-clr-neutral-400 djne-margin-block-end-5">The different styling of cards and the classes used.</p>
+					<p class="djne-fs-400 djne-clr-neutral-400 djne-fw-bold djne-margin-block-end-2 sg-white-space">
+						<span class="djne-bg-accent-100 djne-clr-accent-700 djne-border-radius-1 djne-margin-inline-1 djne-padding-block-1 djne-padding-inline-2">-card</span>
+						<span class="djne-bg-accent-100 djne-clr-accent-700 djne-border-radius-1 djne-margin-inline-1 djne-padding-block-1 djne-padding-inline-2">-card__heading</span>
+						<span class="djne-bg-accent-100 djne-clr-accent-700 djne-border-radius-1 djne-margin-inline-1 djne-padding-block-1 djne-padding-inline-2">-card__body</span>
+					</p>
+					<p class="djne-fs-400 djne-clr-neutral-400 djne-fw-bold djne-margin-block-end-2 sg-white-space">
+						Card 1 with <span class="djne-bg-accent-100 djne-clr-accent-700 djne-border-radius-1 djne-margin-inline-1 djne-padding-block-1 djne-padding-inline-2">data-type="testimonial"</span> ⮞ Quotes added
+					</p>
+					<div class="djne-even-columns djne-margin-block-10">
+						<div class="djne-card | djne-box-shadow-1" data-type="testimonial">
+							<div class="djne-card__heading | djne-padding-block-end-6">Lorem ipsum dolor sit amet</div>
+							<div class="djne-card__body">
+								<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi doloribus architecto tempora, explicabo modi maiores ducimus expedita quibusdam, nobis numquam voluptate, doloremque nostrum molestias labore.</p>
+							</div>
+							<div class="djne-padding-block-start-6 bg-neutral-200 text-center">
+								<p class="djne-fs-500 djne-fw-bold djne-clr-primary-500">Lorem ipsum</p>
+								<p class="djne-fs-300">Lorem ipsum dolor sit</p>
+							</div>
+						</div>
+						<div class="djne-card | djne-box-shadow-2">
+							<div class="djne-card__heading | djne-padding-block-end-6">Lorem ipsum dolor sit amet</div>
+							<div class="djne-card__body">
+								<p>
+									Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis, a molestiae dicta sunt possimus illo et magnam iste praesentium officiis omnis perspiciatis deserunt earum natus mollitia porro ratione labore atque,
+									reprehenderit sed, perferendis hic ad eligendi. Blanditiis, ipsa.
+								</p>
+							</div>
+						</div>
+						<div class="djne-card | djne-box-shadow-3">
+							<div class="djne-card__heading | djne-padding-block-end-6">Lorem ipsum dolor sit amet</div>
+							<div class="djne-card__body">
+								<p>
+									Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse mollitia ullam iusto quia facere maxime doloremque unde illum animi sed perspiciatis voluptas, incidunt eos. Voluptates accusamus culpa voluptatem
+									quisquam suscipit ea, et illo repellat fuga, asperiores perspiciatis fugiat.
+								</p>
+							</div>
+						</div>
+					</div>
+				</section>
+				<section class="sg-section" id="Footer">
+					<h2 class="djne-clr-neutral-700 djne-fs-600 djne-fw-bold djne-margin-block-end-2">Footer</h2>
+				</section>
+				<section class="sg-section djne-bg-neutral-800 djne-clr-neutral-000 djne-text-center">
+					<p>Style Guide Inspired by <a href="http://www.nikolaibain.com" target="_blank">Nikolai Bain</a>.</p>
+				</section>
+			</div>
+		</div>
+	</body>
+</html>
