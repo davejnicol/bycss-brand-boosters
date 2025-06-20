@@ -61,24 +61,24 @@
 		}
 
 		&[data-type="simple"] {
-			background-color: clr(neutral, 800);
+			background-color: clr(neutral, 700);
 			color: $button-primary-color;
 
 			&:is(:hover, :focus) {
-				background-color: clr(neutral, 700);
+				background-color: clr(neutral, 100);
 				color: $button-primary-color-hover;
 			}
 		}
 
 		&[data-type="simple-outline"] {
 			background: transparent;
-			color: clr(neutral, 800);
-			outline: var(--outline-size) solid clr(neutral, 800);
+			color: clr(neutral, 700);
+			outline: var(--outline-size) solid clr(neutral, 700);
 			outline-offset: calc(var(--outline-size) * -1);
 
 			&:is(:hover, :focus) {
 				background: clr(neutral, 700);
-				color: clr(neutral, 100);
+				color: clr(neutral, 000);
 				outline: none;
 			}
 		}

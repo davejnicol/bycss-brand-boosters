@@ -72,7 +72,7 @@ $dark: (
 	"brand-primary": (
 		"100": $-clr-blue-dark,
 		"200": $-clr-blue-mid,
-		"400": $-clr-blue-light,
+		"400": $-clr-cyan-mid,
 		"700": $-clr-blue-very-light,
 	),
 	"brand-accent": (
@@ -135,16 +135,16 @@ $colors: (
 		700: $color-neutral-700,
 	),
 	brand-primary: (
-		100: $color-primary-100,
-		200: $color-primary-200,
-		400: $color-primary-400,
-		700: $color-primary-700,
+		100: $color-brand-primary-100,
+		200: $color-brand-primary-200,
+		400: $color-brand-primary-400,
+		700: $color-brand-primary-700,
 	),
 	brand-accent: (
-		100: $color-accent-100,
-		200: $color-accent-200,
-		400: $color-accent-400,
-		700: $color-accent-700,
+		100: $color-brand-accent-100,
+		200: $color-brand-accent-200,
+		400: $color-brand-accent-400,
+		700: $color-brand-accent-700,
 	),
 	yellow: (
 		300: $color-yellow-300,
