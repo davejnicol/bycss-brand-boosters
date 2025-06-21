@@ -6,6 +6,7 @@
 
 		display: inline-flex;
 		justify-content: center;
+		background-color: $button-default-background;
 		border: $button-border;
 		border-radius: $button-border-radius;
 		cursor: pointer;
@@ -17,6 +18,10 @@
 		text-decoration: $button-text-decoration;
 		text-transform: $button-text-transform;
 		transition: 275ms ease;
+
+		&:is(:hover, :focus) {
+			background-color: $button-default-hover-background;
+		}
 
 		&[data-type="primary"] {
 			background-color: $button-primary-background;

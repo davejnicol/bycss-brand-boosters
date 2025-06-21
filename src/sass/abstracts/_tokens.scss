@@ -99,9 +99,12 @@ $button-border-radius: $border-radius-1;
 $button-font-family: $body-font-family;
 $button-font-size: $font-size-400;
 $button-font-weight: $font-weight-default;
-$button-padding-default: 0.5em 1em;
+$button-padding-default: 0.75em 1em;
 $button-text-decoration: none;
 $button-text-transform: none;
+
+$button-default-background: transparent;
+$button-default-hover-background: $color-neutral-100;
 
 $button-primary-color: $color-neutral-000;
 $button-primary-background: $color-brand-primary-400;
