@@ -1,0 +1,7 @@
+@use "../abstracts" as *;
+
+.#{$prefix} {
+	&vertically-centered {
+		align-items: center;
+	}
+}

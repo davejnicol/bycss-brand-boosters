@@ -1,0 +1,10 @@
+@use "../abstracts" as *;
+
+.#{$prefix} {
+	&hero {
+		&__image {
+			height: 100%;
+			object-fit: cover;
+		}
+	}
+}
