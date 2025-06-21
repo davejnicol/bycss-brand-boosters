@@ -4,15 +4,19 @@
 	&offset-grid {
 		display: grid;
 		gap: $grid-gap;
-		grid-template-columns: repeat(3, 1fr);
+		grid-template-columns: 1fr;
 
-		& > :nth-child(4n + 2),
-		& > :nth-child(4n + 3) {
-			grid-column: span 2;
+		@include mq(medium) {
+			grid-template-columns: repeat(3, 1fr);
+
+			& > :nth-child(4n + 2),
+			& > :nth-child(4n + 3) {
+				grid-column: span 2;
+			}
 		}
 
 		p {
-			max-width: 36ch;
+			max-width: 34ch;
 		}
 	}
 }
