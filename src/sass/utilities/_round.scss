@@ -4,5 +4,15 @@
 	&round {
 		border-radius: 50%;
 		aspect-ratio: 1 / 1;
+
+		&-top {
+			border-radius: 100vw 100vw 0 0;
+		}
+		&-bottom {
+			border-radius: 0 0 100vw 100vw;
+		}
+		&-tear {
+			border-radius: 100vw 100vw 100vw 0;
+		}
 	}
 }
