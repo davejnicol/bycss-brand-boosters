@@ -1,0 +1,74 @@
+@use "../abstracts" as *;
+
+.#{$prefix} {
+	&fixed-theme-toggle {
+		cursor: pointer;
+		position: fixed;
+		right: 1em;
+		bottom: 1em;
+		z-index: 999;
+	}
+	&theme-toggle {
+		background: $color-neutral-100;
+		border: 0;
+		border-radius: 50%;
+		cursor: pointer;
+		opacity: 0.6;
+		padding: 0.75rem;
+		position: relative;
+		isolation: isolate;
+
+		&:hover,
+		&:focus {
+			background-color: $color-neutral-100;
+			outline: 0;
+			opacity: 1;
+		}
+
+		svg {
+			fill: $color-neutral-700;
+		}
+
+		&:after {
+			position: absolute;
+			z-index: -1;
+			content: attr(aria-label);
+			background: $color-neutral-100;
+			border-radius: 0.125em;
+			color: $color-neutral-700;
+			margin: 0 auto;
+			padding: 0.5em 1em;
+			opacity: 0;
+
+			width: max-content;
+			right: 2.35em;
+			bottom: 0.2em;
+			transform: scale(0);
+			transform-origin: center;
+			transition: transform 0ms linear 100ms, opacity 100ms linear;
+		}
+		&:hover::after,
+		&:focus-visible::after {
+			opacity: 0.7;
+			transform: scale(1);
+			transition: transform 70ms linear, opacity 70ms linear;
+		}
+	}
+}
+
+/* Sun Transition */
+.#{$prefix}theme-toggle ##{$prefix}toggle-circle {
+	transition: transform 500ms ease-out;
+	@debug &;
+}
+
+/* purgecss start ignore */
+body[data-theme="light"] .#{$prefix}theme-toggle ##{$prefix}toggle-circle {
+	transform: translateX(-14%);
+	@debug &;
+}
+body[data-theme="dark"] .#{$prefix}theme-toggle ##{$prefix}toggle-circle {
+	transform: translateX(0);
+	@debug &;
+}
+/* purgecss end ignore */
