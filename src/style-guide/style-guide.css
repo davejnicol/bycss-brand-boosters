@@ -100,8 +100,8 @@
 #sg-theme-toggle::after {
 	content: attr(aria-label);
 	position: absolute;
-	right: 2.3em;
-	bottom: 0.25em;
+	right: 2.35em;
+	bottom: 0.2em;
 	width: max-content;
 	margin: 0 auto;
 	padding: 0.5em 1em;
