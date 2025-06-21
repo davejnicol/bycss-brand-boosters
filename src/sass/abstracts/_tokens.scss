@@ -73,7 +73,7 @@ $site-header-color: $color-neutral-700;
 $side-header-margin: 0;
 $site-header-padding: $size-8 0;
 $site-header-alignment: center;
-$site-header-jusitifcation-small-screens: center;
+$site-header-jusitifcation-small-screens: space-between;
 $site-header-jusitifcation-large-screens: space-between;
 
 // Navigation
@@ -103,10 +103,10 @@ $button-padding-default: 0.5em 1em;
 $button-text-decoration: none;
 $button-text-transform: none;
 
-$button-primary-color: $color-neutral-000; //$color-neutral-000
-$button-primary-background: $color-brand-primary-400; //
+$button-primary-color: $color-neutral-000;
+$button-primary-background: $color-brand-primary-400;
 $button-primary-color-hover: $color-brand-primary-700;
-$button-primary-background-hover: $color-cyan-300; //$color-brand-accent-700
+$button-primary-background-hover: $color-cyan-300;
 
 $button-accent-color: $color-brand-primary-100;
 $button-accent-background: $color-brand-accent-400;
