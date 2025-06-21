@@ -59,16 +59,13 @@
 /* Sun Transition */
 .#{$prefix}theme-toggle ##{$prefix}toggle-circle {
 	transition: transform 500ms ease-out;
-	@debug &;
 }
 
 /* purgecss start ignore */
 body[data-theme="light"] .#{$prefix}theme-toggle ##{$prefix}toggle-circle {
 	transform: translateX(-14%);
-	@debug &;
 }
 body[data-theme="dark"] .#{$prefix}theme-toggle ##{$prefix}toggle-circle {
 	transform: translateX(0);
-	@debug &;
 }
 /* purgecss end ignore */

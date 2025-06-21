@@ -17,3 +17,65 @@
 		}
 	}
 }
+
+/* Mobile Hamburger Menu to Desktop Menu */
+/* purgecss start ignore */
+.#{$prefix} {
+	&nav-container input[type="checkbox"] {
+		display: none;
+	}
+	&hamburger {
+		display: block;
+		cursor: pointer;
+		padding: $size-5 $size-3;
+
+		&-line {
+			position: relative;
+			background: $color-neutral-700;
+			display: block;
+			height: 3px;
+			width: 26px;
+
+			&::before,
+			&::after {
+				position: absolute;
+				content: "";
+				background: $color-neutral-700;
+				display: block;
+				height: 100%;
+				width: 100%;
+				transition: all 250ms ease-out;
+			}
+			&::before {
+				top: 7px;
+			}
+			&::after {
+				top: -7px;
+			}
+		}
+
+		// @include mq(medium) {
+		// 	display: none;
+		// }
+	}
+	##{$prefix}show-menu:checked + &hamburger {
+		border-radius: 50%;
+		background-color: $color-brand-primary-200;
+		color: $color-brand-primary-400;
+
+		& .#{$prefix}hamburger-line {
+			background: transparent;
+
+			&::before {
+				transform: rotate(-45deg);
+				top: 0;
+			}
+			&::after {
+				transform: rotate(45deg);
+				top: 0;
+			}
+			@debug &;
+		}
+	}
+}
+/* purgecss end ignore */
