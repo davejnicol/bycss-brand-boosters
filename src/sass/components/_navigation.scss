@@ -19,95 +19,99 @@
 }
 /* TODO https://codepen.io/jo_Geek/pen/xgbaEr https://codepen.io/erikterwan/pen/EVzeRP */
 
-/* Mobile Hamburger Menu to Desktop Menu */
+/* Header Mobile Hamburger Menu to Desktop Menu */
 /* purgecss start ignore */
 .#{$prefix} {
 	&nav-container {
 		position: relative;
-
+	}
+	&site-header:has(&nav-container) {
 		& input[type="checkbox"] {
 			display: none;
 		}
-	}
 
-	&hamburger {
-		display: block;
-		cursor: pointer;
-		padding: $size-5 $size-3;
-
-		&-line {
-			position: relative;
-			background: $color-neutral-700;
+		& .#{$prefix}hamburger {
 			display: block;
-			height: 3px;
-			width: 26px;
-
-			&::before,
-			&::after {
-				position: absolute;
-				content: "";
+			cursor: pointer;
+			padding: $size-5 $size-3;
+			&-line {
+				position: relative;
 				background: $color-neutral-700;
 				display: block;
-				height: 100%;
-				width: 100%;
-				transition: all 250ms ease-out;
+				height: 3px;
+				width: 26px;
+
+				&::before,
+				&::after {
+					position: absolute;
+					content: "";
+					background: $color-neutral-700;
+					display: block;
+					height: 100%;
+					width: 100%;
+					transition: all 250ms ease-out;
+				}
+				&::before {
+					top: 7px;
+				}
+				&::after {
+					top: -7px;
+				}
 			}
-			&::before {
-				top: 7px;
-			}
-			&::after {
-				top: -7px;
+			@include mq(medium) {
+				display: none;
 			}
 		}
+		& ##{$prefix}show-menu:checked + .#{$prefix}hamburger {
+			border-radius: 50%;
+			background-color: $color-brand-primary-200;
+			color: $color-brand-primary-400;
 
-		@include mq(medium) {
-			display: none;
-		}
-	}
-	##{$prefix}show-menu:checked + &hamburger {
-		border-radius: 50%;
-		background-color: $color-brand-primary-200;
-		color: $color-brand-primary-400;
+			& .#{$prefix}hamburger-line {
+				background: transparent;
 
-		& .#{$prefix}hamburger-line {
-			background: transparent;
-
-			&::before {
-				transform: rotate(-45deg);
-				top: 0;
-			}
-			&::after {
-				transform: rotate(45deg);
-				top: 0;
+				&::before {
+					transform: rotate(-45deg);
+					top: 0;
+				}
+				&::after {
+					transform: rotate(45deg);
+					top: 0;
+				}
 			}
 		}
-	}
-	&nav {
-		visibility: hidden;
-		position: absolute;
-		right: 0%;
-		top: $size-10;
-		background-color: $color-neutral-100;
-		padding: $size-5 $size-8;
-		min-width: max-content;
+		& .#{$prefix}nav {
+			visibility: hidden;
+			position: absolute;
+			right: 0%;
+			top: $size-10;
+			background-color: $color-neutral-100;
+			padding: $size-5 $size-8;
+			min-width: max-content;
 
-		@include mq(medium) {
-			display: inherit;
+			@include mq(medium) {
+				display: flex;
+				position: relative;
+				right: auto;
+				top: auto;
+				background-color: transparent;
+				padding: 0;
+				visibility: visible;
+			}
+		}
+		& ##{$prefix}show-menu:checked ~ .#{$prefix}nav {
+			display: grid;
+			grid-gap: $size-6;
 			visibility: visible;
+			animation: menushow 600ms ease-in;
 		}
-	}
-	##{$prefix}show-menu:checked ~ &nav {
-		display: grid;
-		grid-gap: $size-6;
-		visibility: visible;
-		animation: menushow 600ms ease-in;
-	}
-	@keyframes menushow {
-		from {
-			opacity: 0;
-		}
-		to {
-			opacity: 1;
+		@keyframes menushow {
+			from {
+				opacity: 0;
+			}
+			to {
+				opacity: 1;
+			}
 		}
 	}
 }
