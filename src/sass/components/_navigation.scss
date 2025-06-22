@@ -17,13 +17,19 @@
 		}
 	}
 }
+/* TODO https://codepen.io/jo_Geek/pen/xgbaEr https://codepen.io/erikterwan/pen/EVzeRP */
 
 /* Mobile Hamburger Menu to Desktop Menu */
 /* purgecss start ignore */
 .#{$prefix} {
-	&nav-container input[type="checkbox"] {
-		display: none;
+	&nav-container {
+		position: relative;
+
+		& input[type="checkbox"] {
+			display: none;
+		}
 	}
+
 	&hamburger {
 		display: block;
 		cursor: pointer;
@@ -54,9 +60,9 @@
 			}
 		}
 
-		// @include mq(medium) {
-		// 	display: none;
-		// }
+		@include mq(medium) {
+			display: none;
+		}
 	}
 	##{$prefix}show-menu:checked + &hamburger {
 		border-radius: 50%;
@@ -74,7 +80,34 @@
 				transform: rotate(45deg);
 				top: 0;
 			}
-			@debug &;
+		}
+	}
+	&nav {
+		visibility: hidden;
+		position: absolute;
+		right: 0%;
+		top: $size-10;
+		background-color: $color-neutral-100;
+		padding: $size-5 $size-8;
+		min-width: max-content;
+
+		@include mq(medium) {
+			display: inherit;
+			visibility: visible;
+		}
+	}
+	##{$prefix}show-menu:checked ~ &nav {
+		display: grid;
+		grid-gap: $size-6;
+		visibility: visible;
+		animation: menushow 600ms ease-in;
+	}
+	@keyframes menushow {
+		from {
+			opacity: 0;
+		}
+		to {
+			opacity: 1;
 		}
 	}
 }
