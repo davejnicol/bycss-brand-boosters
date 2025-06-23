@@ -47,3 +47,27 @@ function setThemePreference() {
         enableLightTheme();
     }
 }
+
+
+/* Feature Items Lists */
+document.addEventListener('DOMContentLoaded', function() {
+    const featureItems = document.querySelectorAll('.djne-feature-title-item');
+    const contentSections = document.querySelectorAll('.djne-feature-content-item');
+    
+    featureItems.forEach(item => {
+        item.addEventListener('click', function() {
+            // Remove active class from all items and sections
+            featureItems.forEach(i => i.classList.remove('active'));contentSections.forEach(s => s.classList.remove('active'));
+            
+            // Add active class to clicked item
+            this.classList.add('active');
+            
+            // Show corresponding content
+            const contentId = this.getAttribute('data-content');
+            const targetContent = document.getElementById(contentId);
+            if (targetContent) {
+                targetContent.classList.add('active');
+            }
+        });
+    });
+});

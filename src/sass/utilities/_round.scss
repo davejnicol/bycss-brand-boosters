@@ -14,5 +14,9 @@
 		&-tear {
 			border-radius: 100vw 100vw 100vw 0;
 		}
+		&-circle {
+			object-fit: cover;
+			width: 80%;
+		}
 	}
 }
