@@ -1,0 +1,72 @@
+@use "sass:map";
+@use "../abstracts/" as *;
+
+.#{$prefix} {
+	&pricing-plans {
+		display: grid;
+		grid-template-columns: 1fr;
+		gap: $size-5;
+
+		@include mq(medium) {
+			grid-template-columns: repeat(3, 1fr);
+
+			& > * {
+				grid-template-rows: subgrid;
+				grid-row: span 5;
+			}
+		}
+	}
+	&tier {
+		background: $color-brand-primary-100;
+		border-radius: $border-radius-2;
+		padding: $size-6;
+
+		display: grid;
+		align-items: start;
+		justify-items: center;
+		gap: $size-3;
+
+		&:hover {
+			outline: 4px solid $color-brand-primary-400;
+			box-shadow: $box-shadow-3;
+			transform: scale(1.01);
+			transition: transform ease-in-out 200ms;
+		}
+
+		&__title {
+			text-transform: uppercase;
+		}
+		&__price {
+			font-family: $font-family-accent;
+		}
+
+		&__feature-list {
+			--list-item-spacing: #{$size-7};
+
+			list-style: none;
+			margin-block: $size-6;
+			padding-inline-start: var(--list-item-spacing);
+		}
+
+		&__list-item {
+			padding-block-end: calc(var(--list-item-spacing) / 2);
+			text-indent: calc(-1 * var(--list-item-spacing));
+
+			&::before {
+				$image-color: map.get($active-theme, "brand-accent", "400");
+
+				content: "";
+
+				background-image: url("data:image/svg+xml,%3Csvg width='24' height='24' viewBox='0 0 24 24' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M23.2345 1.48034L20.9488 0.340088L11.1844 19.914L1.90563 15.2854L0.765381 17.5712L12.3299 23.3401L23.2345 1.48034Z' fill='#{$image-color}'/%3E%3C/svg%3E%0A");
+				background-size: 20px;
+				background-repeat: no-repeat;
+
+				padding-inline-end: var(--list-item-spacing);
+			}
+		}
+
+		&__button {
+			width: 100%;
+		}
+	}
+}
