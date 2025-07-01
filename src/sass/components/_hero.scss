@@ -9,7 +9,12 @@
 		&-background {
 			display: flex;
 			position: relative;
-			max-height: 400px;
+			max-height: 420px;
+
+			& img {
+				width: 100%;
+				object-position: center 40%;
+			}
 
 			& a {
 				position: absolute;
