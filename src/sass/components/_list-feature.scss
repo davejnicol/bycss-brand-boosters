@@ -75,10 +75,10 @@
 	}
 
 	&list-feature {
-		margin-block: $size-10;
+		// margin-block: $size-10;
 
 		& > * {
-			padding-block: $size-6;
+			padding-block-start: $size-8;
 		}
 
 		&__heading {
