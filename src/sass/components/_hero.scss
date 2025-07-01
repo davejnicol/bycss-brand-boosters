@@ -3,8 +3,21 @@
 .#{$prefix} {
 	&hero {
 		&__image {
-			height: 100%;
+			min-height: 100%;
 			object-fit: cover;
+		}
+		&-background {
+			display: flex;
+			position: relative;
+			max-height: 400px;
+
+			& a {
+				position: absolute;
+				top: 50%;
+				left: 50%;
+				transform: translate(-50%, -50%);
+				text-wrap: nowrap;
+			}
 		}
 	}
 }
