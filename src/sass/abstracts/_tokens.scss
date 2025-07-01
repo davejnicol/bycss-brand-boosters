@@ -131,28 +131,24 @@ $card-heading-color-default: $card-color-default;
 $card-heading-font-size: $font-size-700;
 
 // Form Elements
-// NOT CURRENTLY BEING USED FOR THIS PROJECT
-// IF IMPLEMENTING FORMS, ALSO UNCOMMENT _forms.scss
-// IN THE _index.scs IN /compoments
+$form-label-color: $body-text-color;
+$form-label-font-family: $body-font-family;
+$form-label-font-weight: $font-weight-bold;
+$form-label-font-size: $body-font-size;
 
-// $form-label-color: $body-text-color;
-// $form-label-font-family: $body-font-family;
-// $form-label-font-weight: $font-weight-bold;
-// $form-label-font-size: $body-font-size;
+$form-input-color: $body-text-color;
+$form-input-font-family: $font-family-accent;
+$form-input-font-weight: $font-weight-default;
+$form-input-font-size: $body-font-size;
+$form-input-background-color: $color-neutral-100;
+$form-input-border-default: 2px solid $color-brand-primary-700;
+$form-input-border-focus: 2px solid $color-brand-accent-400;
+$form-input-border-radius: $border-radius-1;
+$form-input-padding: $size-3;
 
-// $form-input-color: $body-text-color;
-// $form-input-font-family: $body-font-family;
-// $form-input-font-weight: $font-weight-semi-bold;
-// $form-input-font-size: $body-font-size;
-// $form-input-background-color: $color-neutral-100;
-// $form-input-border-default: 3px solid $color-primary-200;
-// $form-input-border-focus: 3px solid $color-primary-400;
-// $form-input-border-radius: $border-radius-1;
-// $form-input-padding: $size-3;
+$form-placeholder-color: $color-neutral-400;
+$form-placeholder-font-family: $form-input-font-family;
+$form-placeholder-font-weight: $form-input-font-weight;
+$form-placeholder-font-size: $body-font-size;
 
-// $form-placeholder-color: $color-primary-300;
-// $form-placeholder-font-family: $form-input-font-family;
-// $form-placeholder-font-weight: $form-input-font-weight;
-// $form-placeholder-font-size: $body-font-size;
-
-// $form-group-spacing: 0.5rem;
+$form-group-spacing: 0.5rem;
