@@ -17,5 +17,20 @@
 				order: -1;
 			}
 		}
+
+		&-span {
+			grid-column: span 1;
+
+			&[data-columns="3"] {
+				@include mq(medium) {
+					grid-column: span 3;
+				}
+			}
+			&[data-columns="4"] {
+				@include mq(medium) {
+					grid-column: span 4;
+				}
+			}
+		}
 	}
 }
