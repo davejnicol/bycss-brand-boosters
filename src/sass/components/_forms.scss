@@ -2,8 +2,19 @@
 
 .#{$prefix} {
 	&contact-form {
+		display: grid;
+		gap: $size-2 $size-6;
+
+		@include mq(medium) {
+			// grid-template-columns: 1fr 1fr;
+		}
 		.form-group {
 			display: grid;
+		}
+		& button {
+			grid-column-end: -1;
+			justify-self: end;
+			margin-block-start: $size-4;
 		}
 	}
 }
@@ -27,7 +38,6 @@ textarea {
 	&:focus {
 		border: $form-input-border-focus;
 		outline: $form-input-border-focus;
-		@debug &;
 	}
 
 	&::placeholder {
